@@ -1,15 +1,13 @@
-// const hamburger = document.querySelector(".ham");
-// const navsub = document.querySelector(".nav-sub");
-// hamburger.addEventListener('click', () => {
-//     hamburger.classList.toggle("change")
-//     navsub.classList.toggle("nav-change")
-// });
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener('click', () => {
+   hideSection();
+   toggleNavbar()
+    document.body.classList.toggle("hide-scrolling")
+});
 
-function classToggle() {
-    const navs = document.querySelectorAll('.Navbar__Items')
-
-    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+function hideSection(){
+    document.querySelector("section.active").classList.toggle("fade-out")
 }
-
-document.querySelector('.Navbar__Link-toggle')
-    .addEventListener('click', classToggle);
+function toggleNavbar(){
+    document.querySelector(".header").classList.toggle("active");
+}
