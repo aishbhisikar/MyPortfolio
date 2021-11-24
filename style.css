@@ -43,7 +43,7 @@ body::before{
     top: 0;
     height: 100%;
     width: 100%;
-    background-color:var(--green-yellow) ;
+    /*background-color:var(--green-yellow) ;*/
     z-index:-1;
     opacity: 0.12;
 }
@@ -91,6 +91,77 @@ section.fade-out{
         opacity: 1;
     }
 }
+/*background circles*/
+.bg-cirles{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.bg-cirles div{
+    position: absolute;
+    border-radius: 50%;
+}
+.bg-cirles .circle-1{
+    height: 60px;
+    width: 60px;
+    background-color: var(--blue);
+    left: 5%;
+    top: 10%;
+    opacity: 15%;
+    animation: zoomInOut 8s linear infinite;
+}
+.bg-cirles .circle-2{
+    height: 100px;
+    width: 100px;
+    background-color: var(--main-color);
+    left: 35%;
+    top: 50%;
+    opacity: 20%;
+    animation: bounce 8s linear infinite;
+}
+.bg-cirles .circle-3{
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+    right: 0%;
+    top: 70%;
+    opacity: 20%;
+    animation: bounce 8s linear infinite;
+}
+.bg-cirles .circle-4{
+    height: 45px;
+    width: 45px;
+    background-color: var(--orange);
+    left: 10%;
+    top: 65%;
+    opacity: 25%;
+    animation: zoomInOut 8s linear infinite;
+}
+
+@keyframes zoomInOut {
+    0%,100%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+
+}
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    
+}
+
 .main{
     max-width: 1200px;
     margin: auto;
@@ -299,7 +370,6 @@ section.fade-out{
 }
 /*home Section*/
 .home-section{
-    /*display: flex;*/
     padding: 120px 0;
 }
 .home-section .active{
@@ -336,6 +406,19 @@ display: flex;
     width: 100%;
     border-radius: 50%;
 }
+/*about section*/
+.about-section{
+    margin-top: 30px;
+    padding: 60px 0;
+}
+.heading-center{
+    justify-content: center;
+    margin-bottom: 45px;
+}
+.heading-center{
+    justify-content: center;
+    margin-bottom: 45px;
+}
 /*responsive*/
 @media (max-width: 991px) {
     .container{
@@ -361,6 +444,9 @@ display: flex;
 @media (max-width: 575px){
     .header .nav-inner ul li a{
         font-size: 35px;
+    }
+    .home-section{
+        padding: 30px 0;
     }
     .home-text h1{
         font-size: 30px;
