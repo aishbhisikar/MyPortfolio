@@ -1,5 +1,6 @@
 /*font*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap');
 /*global settings*/
 * {
     box-sizing: border-box;
@@ -14,7 +15,7 @@
 :root{
     --main-color:#e02f6b;
     --blue: #0000ff;
-    --blue-dark:#18293c;
+    --blue-dark:#294f7a;
     --orange:#ffa500;
     --green-yellow:#cddc39;
     --pink-light:#efa2b4;
@@ -76,6 +77,9 @@ section.fade-out{
   animation: fadeOut 0.5s ease-in-out forwards;
 }
 
+button:focus {
+     outline: none;
+}
 /*background circles*/
 .bg-cirles{
     position: fixed;
@@ -85,7 +89,6 @@ section.fade-out{
     width: calc(100% - 30px);
     left: 50%;
     transform: translate(-50%);
-    /*z-index: 1;*/
 }
 .bg-cirles div{
     position: absolute;
@@ -110,12 +113,12 @@ section.fade-out{
     animation: bounce 8s linear infinite;
 }
 .bg-cirles .circle-3{
-    height: 120px;
-    width: 120px;
-    background-color: var(--blue);
+    height: 100px;
+    width: 100px;
+    background-color: var(--green-yellow);
     right: 0%;
     top: 70%;
-    opacity: 35%;
+    opacity: 55%;
     animation: bounce 8s linear infinite;
 }
 .bg-cirles .circle-4{
@@ -157,7 +160,7 @@ section.fade-out{
     overflow-y: hidden;
 }
 /*buttons*/
-.btn{
+.butn{
     line-height:1.5;
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
@@ -176,7 +179,7 @@ section.fade-out{
     vertical-align: middle;
     transition: color 0.3s ease;
 }
-.btn::before{
+.butn::before{
     content: '';
     position: absolute;
     left: 0;
@@ -187,10 +190,10 @@ section.fade-out{
     z-index:-1;
     transition: width 0.3s ease;
 }
-.btn:hover:before{
+.butn:hover:before{
     width: 100%;
 }
-.btn:hover{
+.butn:hover{
     color: var(--white);
 }
 /*header*/
@@ -214,7 +217,7 @@ section.fade-out{
     max-width: 1200px;
     margin: auto;
 }
-.header .nav-toggler{
+.header .myNav-toggler{
     width: 50px;
     height: 40px;
     cursor: pointer;
@@ -228,23 +231,23 @@ section.fade-out{
     z-index: 1;
     transition: opacity 0.5s ease-in-out;
 }
-.header .nav-toggler .hide{
+.header .myNav-toggler .hide{
     opacity: 0;
     transition: none;
 }
-.header .nav-toggler span{
+.header .myNav-toggler span{
   height: 2px;
     width: 24px;
     background-color: var(--main-color);
     position: relative;
     transition: background-color 0.3s ease;
 }
-.header.active .nav-toggler span{
+.header.active .myNav-toggler span{
     background-color: transparent;
 
 }
-.header .nav-toggler span::before,
-.header .nav-toggler span::after{
+.header .myNav-toggler span::before,
+.header .myNav-toggler span::after{
     content: '';
     position: absolute;
     top: 0;
@@ -253,25 +256,25 @@ section.fade-out{
     background-color: var(--main-color);
     transition: all 0.3s ease;
 }
-.header .nav-toggler span::before{
+.header .myNav-toggler span::before{
     left: 0;
     transform: translateY(-8px);
 }
-.header.active .nav-toggler span::before{
+.header.active .myNav-toggler span::before{
     transform: rotate(45deg);
 }
-.header .nav-toggler span::after{
+.header .myNav-toggler span::after{
     right: 0;
     transform: translateY(8px);
 }
-.header.active .nav-toggler span::after{
+.header.active .myNav-toggler span::after{
     transform: rotate(-45deg);
 }
-.header:not(.active) .nav-toggler:hover span::before,
-.header:not(.active) .nav-toggler:hover span::after{
+.header:not(.active) .myNav-toggler:hover span::before,
+.header:not(.active) .myNav-toggler:hover span::after{
     width: 50%;
 }
-.header .nav{
+.header .myNav{
     position: fixed;
     left: 0;
     top: 0;
@@ -281,10 +284,10 @@ section.fade-out{
     visibility: hidden;
     overflow-y:auto ;
 }
-.header.active .nav{
+.header.active .myNav{
     visibility: visible;
 }
-.header .nav-inner{
+.header .myNav-inner{
     min-height: calc(100vh - 70vh);
     max-width: 1200px;
     margin: auto;
@@ -299,14 +302,14 @@ section.fade-out{
     /*opacity: 0;*/
     transition: all 0.5s ease;
 }
-.header.active.nav-inner {
+.header.active.myNav-inner {
     opacity: 1;
 }
-.header .nav-inner ul li{
+.header .myNav-inner ul li{
     text-align: center;
     list-style: none;
 }
-.header .nav-inner ul li a{
+.header .myNav-inner ul li a{
     font-size: 40px;
     text-transform: capitalize;
     color: var(--blue-dark);
@@ -316,7 +319,7 @@ section.fade-out{
     transition: color 0.3s ease;
     position: relative;
 }
-.header .nav-inner ul li a::before{
+.header .myNav-inner ul li a::before{
     content:'';
     position: absolute;
     right: 0;
@@ -327,10 +330,10 @@ section.fade-out{
     z-index: -1;
     transition: width 0.5s ease;
 }
-.header .nav-inner ul li a:hover::before{
+.header .myNav-inner ul li a:hover::before{
     width: 100%;
 }
-.header .nav-inner ul li a:hover{
+.header .myNav-inner ul li a:hover{
     color: var(--main-color);
 }
 /*home Section*/
@@ -357,7 +360,7 @@ display: flex;
     font-weight: 300;
     margin: 0 0 30px;
 }
-.home-text .btn{
+.home-text .butn{
     margin: 0 15px 15px 0;
 }
 .home-img,.img-box{
@@ -375,15 +378,24 @@ display: flex;
 .about-section{
     margin-top: 30px;
     padding: 60px 0;
+    /*font-family: 'Kalam', cursive;*/
+    /*font-weight: 400;*/
 }
 .heading-center{
     justify-content: center;
     margin-bottom: 45px;
 }
-.heading-center{
-    justify-content: center;
-    margin-bottom: 45px;
+.section-heading {
+    text-align: center;
+    padding: 20px 45px 20px;
 }
+.line-dec {
+    width: 60px;
+    height: 3px;
+    background-color: var(--blue-dark);
+    margin: 10px auto;
+}
+
 /*animations*/
 @keyframes fadeOut {
     0%{
@@ -424,25 +436,27 @@ display: flex;
     .container{
         padding: 0;
     }
-    .home-text,
-    .home-img{
-        width: 100%;
-    }
     .home-text{
         text-align: center;
+        width: 100%;
     }
     .home-img{
         order: -1;
+        width: 70%;
     }
     .home-img .img-box{
         max-width: 300px;
     }
-    .home-text .btn{
+    .home-text .butn{
         margin: 0 7px 15px;
     }
+    .abt-items{
+        padding: 20px 50px;
+    }
+
 }
 @media (max-width: 575px){
-    .header .nav-inner ul li a{
+    .header .myNav-inner ul li a{
         font-size: 35px;
     }
     .home-section{
@@ -453,6 +467,9 @@ display: flex;
     }
     .home-text h1{
         font-size: 18px;
+    }
+    .header .myNav-toggler {
+        margin: 0 30px;
     }
 }
 

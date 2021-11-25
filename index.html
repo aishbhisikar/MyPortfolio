@@ -5,6 +5,7 @@
     <title>MyPortfolio</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script defer src="style.js"></script>
 </head>
@@ -22,11 +23,11 @@
     <header class="header">
         <div class="container">
             <div class="row flex-end">
-                <button type="button" class="nav-toggler">
+                <button type="button" class="myNav-toggler">
                     <span></span>
                 </button>
-                <nav class="nav">
-                   <div class="nav-inner">
+                <nav class="myNav">
+                   <div class="myNav-inner">
                        <ul>
                            <li><a href="#home" class="nav-item link-item">Home</a></li>
                            <li><a href="#about" class="nav-item link-item">About</a></li>
@@ -48,8 +49,8 @@
                     <p>Hello, I'm</p>
                     <h1>Aishwarya Bhisikar</h1>
                     <h2>Frontend web developer</h2>
-                    <a href="#about" class="btn link-item">More about me</a>
-                    <a href="#portfolio" class="btn link-item">Portfolio</a>
+                    <a href="#about" class="butn link-item">More about me</a>
+                    <a href="#portfolio" class="butn link-item">Portfolio</a>
                 </div>
                 <div class="home-img">
                     <div class="img-box">
@@ -61,11 +62,86 @@
     </section>
 
 <!--    about section-->
-    <section class="about-section"id="about">
+    <section class="about-section active" id="about">
+        <div class="container">
+            <div class="row heading-center">
+                <div class="section-heading">
+                    <h1>About Me</h1>
+                    <div class="line-dec"></div>
+                </div>
+                <div class="row abt-items ">
+                        <p>
+                            Hello! I'm Aishwarya Bhisikar an engineering graduate seeking to
+                            ﬁnd the opportunity to work in a fun and challenging working
+                            environment that will encourage me to improve and learn new and
+                            necessary skills as well as be motivated by the company to do my
+                            best for the sake of helping myself and the company.
+                        </p>
+                </div>
+                <div class="container">
+                    <div class="section-heading">
+                        <h4>My Skills</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                    <div class="row abt-items">
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h5>HTML5 </h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h5>CSS3</h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                         role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h5>Bootstrap</h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                         role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h5>Javascript</h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                         role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h5>MySQL</h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                         role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">65%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+<!--    Portfolio Section-->
+    <section class="portfolio-section"id="portfolio">
         <div class="container">
             <div class="row heading-center">
                 <div class="section-title">
-                    <h1>About Me</h1>
+                    <h1>My Portfolio</h1>
                 </div>
                 <div class="row">
                     <div class="about-text">
@@ -81,6 +157,29 @@
             </div>
         </div>
     </section>
+<!--    Contact Section-->
+    <section class="contact-section"id="contact">
+        <div class="container">
+            <div class="row heading-center">
+                <div class="section-title">
+                    <h1>Contact me</h1>
+                </div>
+                <div class="row">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Aishwarya Bhisikar an engineering graduate seeking to
+                            ﬁnd the opportunity to work in a fun and challenging working
+                            environment that will encourage me to improve and learn new and
+                            necessary skills as well as be motivated by the company to do my
+                            best for the sake of helping myself and the company.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </div>
 
 </body>
