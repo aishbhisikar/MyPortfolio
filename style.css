@@ -35,7 +35,7 @@ body{
     line-height: 1.5;
     overflow-x: hidden;
     padding:35px 15px;
-    /*-webkit-tap-hightlight-color:tranparent;*/
+
 }
 body::before{
     content:'';
@@ -375,11 +375,9 @@ display: flex;
     border-radius: 50%;
 }
 /*about section*/
-.about-section{
+.section-box{
     margin-top: 30px;
     padding: 60px 0;
-    /*font-family: 'Kalam', cursive;*/
-    /*font-weight: 400;*/
 }
 .heading-center{
     justify-content: center;
@@ -389,12 +387,39 @@ display: flex;
     text-align: center;
     padding: 20px 45px 20px;
 }
+.abt-items p{
+    text-align: justify;
+}
 .line-dec {
     width: 60px;
     height: 3px;
     background-color: var(--blue-dark);
     margin: 10px auto;
 }
+.section-buttons .butn {
+    margin: 40px;
+}
+.progress-bar{
+    background-color: var(--white-alpha-25);
+    color: var(--blue-dark);
+}
+.progress-bar-striped{
+    background-image: linear-gradient(
+            80deg,var(--pink-light) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);;
+}
+/*portfolio*/
+.portfolio-img .p-img-box{
+    max-width: 360px;
+    margin: auto;
+}
+.portfolio-img,.p-img-box img{
+    width: 100%;
+}
+.portfolio-img,.p-text{
+    padding: 15px;
+    width:50%;
+}
+/*Contact*/
 
 /*animations*/
 @keyframes fadeOut {
@@ -452,6 +477,9 @@ display: flex;
     }
     .abt-items{
         padding: 20px 50px;
+    }
+    .section-buttons .butn {
+        margin: 10px auto;
     }
 
 }
