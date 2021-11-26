@@ -397,19 +397,14 @@ display: flex;
     margin: 10px auto;
 }
 .section-buttons .butn {
-    margin: 40px;
+    margin: 10px;
 }
-.progress-bar{
-    background-color: var(--white-alpha-25);
-    color: var(--blue-dark);
-}
-.progress-bar-striped{
-    background-image: linear-gradient(
-            80deg,var(--pink-light) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);;
+.abt-items .skills{
+    cursor: default;
+    margin: 10px;
 }
 /*portfolio*/
 .portfolio-img .p-img-box{
-    max-width: 360px;
     margin: auto;
 }
 .portfolio-img,.p-img-box img{
@@ -478,9 +473,7 @@ display: flex;
     .abt-items{
         padding: 20px 50px;
     }
-    .section-buttons .butn {
-        margin: 10px auto;
-    }
+
 
 }
 @media (max-width: 575px){
@@ -498,6 +491,9 @@ display: flex;
     }
     .header .myNav-toggler {
         margin: 0 30px;
+    }
+    .section-buttons .butn {
+        margin: 10px auto ;
     }
 }
 
