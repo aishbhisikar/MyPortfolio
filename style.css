@@ -148,7 +148,7 @@ button:focus {
 }
 /*custom scrollbar*/
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 15px;
 }
 ::-webkit-scrollbar-track{
     background-color: var(--white);
@@ -410,9 +410,16 @@ display: flex;
 .portfolio-img,.p-img-box img{
     width: 100%;
 }
-.portfolio-img,.p-text{
+.portfolio-img{
     padding: 15px;
-    width:50%;
+    width:60%;
+}
+.port-row{
+    margin-bottom: 60px;
+}
+.p-text{
+    width: 40%;
+    margin-top: 60px;
 }
 /*Contact*/
 
