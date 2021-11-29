@@ -480,7 +480,20 @@ display: flex;
     .abt-items{
         padding: 20px 50px;
     }
-
+    .portfolio-box .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-img {
+        order: -1;
+    }
+    .project-details{
+        text-align: center;
+    }
+    .p-text{
+        margin-top: 5px;
+        text-align: justify;
+    }
 
 }
 @media (max-width: 575px){
@@ -501,6 +514,10 @@ display: flex;
     }
     .section-buttons .butn {
         margin: 10px auto ;
+    }
+    .p-butn{
+        font-weight: 300;
+        padding: 15px 13px;
     }
 }
 
