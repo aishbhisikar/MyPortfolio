@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyPortfolio</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script defer src="style.js"></script>
+</head>
+<body>
+<!--background circles-->
+<div class="bg-cirles">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+</div>
+<!--main section-->
+<div class="main">
+    <!--    header section-->
+    <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" class="myNav-toggler">
+                    <span></span>
+                </button>
+                <nav class="myNav">
+                    <div class="myNav-inner">
+                        <ul>
+                            <li><a href="#home" class="nav-item link-item">Home</a></li>
+                            <li><a href="#about" class="nav-item link-item">About</a></li>
+                            <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+                            <li><a href="#contact" class="nav-item link-item">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--    home section-->
+    <section class="home-section align-items-center active" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="home-text">
+                    <p>Hello, I'm</p>
+                    <h1>Aishwarya Bhisikar</h1>
+                    <h2>Frontend web developer</h2>
+                    <a href="#about" class="butn link-item">More about me</a>
+                    <a href="#portfolio" class="butn link-item">Portfolio</a>
+                </div>
+                <div class="home-img">
+                    <div class="img-box">
+                        <img src="images/myPhoto.jpg" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    about section-->
+    <section class="section-box" id="about">
+        <div class="container">
+            <div class="row heading-center">
+                <div class="section-heading">
+                    <h1>About Me</h1>
+                    <div class="line-dec"></div>
+                </div>
+                <div class="row abt-items ">
+                    <p>
+                        Hello! I'm Aishwarya Bhisikar an engineering graduate, I started learning frontend coding year ago,
+                        and I loved it so much I enrolled onto a bootcamp to sharpen my skills. In my course I learned the
+                        fundamentals of HTML, CSS, and JavaScript, and built up the skills needed to be a modern frontend
+                        developer; from responsive design, to accessibility, to CSS libraries and JavaScript frameworks.
+                    </p>
+                    <p>
+                        Now, I'm looking for the opportunity as a frontend developer to work in a fun and challenging
+                        working environment that will encourage me to keep improving both my soft skills and my technical skills.
+                    </p>
+                    <p>
+                        In my spare time I like to cook new dishes, watching Netflix, crafting, travelling.
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="section-heading">
+                        <h4>My Skills</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                    <div class="row abt-items">
+                                <h6 class="butn skills">HTML5 </h6>
+                                <h6 class="butn skills">CSS3</h6>
+                                <h6 class="butn skills">Bootstrap</h6>
+                                <h6 class="butn skills">Javascript</h6>
+                                <h6 class="butn skills">Github</h6>
+                                <h6 class="butn skills">MySQL</h6>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="section-heading">
+                        <h4>Education</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                    <div class="row">
+                        <div class="abt-items">
+                            <h5>Bachloers of Engineering</h5>
+                            <div class="listContent">
+                                <ul>
+                                    <li>
+                                        <strong>Year :</strong>
+                                        <span>2019</span>
+                                    </li>
+                                    <li>
+                                        <strong>CGPA :</strong>
+                                        <span>8.24</span>
+                                    </li>
+                                    <li>
+                                        <strong>College :</strong>
+                                        <span>KDK College of Engineering</span>
+                                    </li>
+                                    <li>
+                                        <strong>University :</strong>
+                                        <span>Nagpur University</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row section-buttons">
+                    <a href="#portfolio" class="butn link-item">Portfolio</a>
+                    <a href="#contact" class="butn link-item">Contact</a>
+                    <a href="#home" class="butn link-item">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Portfolio Section-->
+    <section class="section-box" id="portfolio">
+        <div class="container portfolio-box">
+            <div class="row heading-center">
+                <div class="section-heading">
+                    <h1>Portfolio</h1>
+                    <div class="line-dec"></div>
+                </div>
+            </div>
+            <div class="project-details">
+                <h2>Four Card</h2>
+                <div class="row port-row">
+                    <div class="p-text">
+                        <div class="project-desc">
+                            <p>
+                                Project that shows knowledge of structuring HTML and designing it with CSS. Fully Responsive.
+                                i.e.Works well with Desktop/Mobile.
+                            </p>
+                            <a href="https://github.com/aishbhisikar/four-card/tree/main" class="butn p-butn">Link to code</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-img">
+                        <div class="p-img-box">
+                            <img src="images/fourcard%20(1).png" alt="Profile Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-details">
+                <h2>Time tracking dashboard</h2>
+                <div class="row port-row">
+                    <div class="portfolio-img">
+                        <div class="p-img-box">
+                            <img src="images/tailwind.png" alt="Profile Image">
+                        </div>
+                    </div>
+                    <div class="p-text">
+                        <div class="project-desc">
+                            <p>
+                                This project was created by using CSS library i.e TailwindCSS.
+                                This dashboard was initially created for mobile then converted to make compatible with desktop.
+                                Now it is fully responsive.
+                            </p>
+                            <a href="https://github.com/aishbhisikar/Time-tracking-dashboard-using-tailwindcss/tree/mobile-design"
+                               class="butn p-butn">Link to code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-buttons">
+                <a href="#contact" class="butn link-item">Contact</a>
+                <a href="#about" class="butn link-item">About</a>
+                <a href="#home" class="butn link-item">Back to Home</a>
+            </div>
+        </div>
+    </section>
+    <!--    Contact Section-->
+    <section class="section-box" id="contact">
+        <div class="container">
+            <div class="row heading-center">
+                <div class="section-heading">
+                    <h1>Contact</h1>
+                    <div class="line-dec"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
